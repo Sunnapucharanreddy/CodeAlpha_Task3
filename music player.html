@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neo Music Player</title>
+  <link rel="stylesheet" href="music player style.css" />
+</head>
+<body>
+  <div class="player-container">
+    <div class="album-art">
+      <img id="cover" src="cover1.jpg" alt="Cover" />
+    </div>
+    <div class="track-info">
+      <h2 id="track-title">Loading..</h2>
+      <p id="track-artist">Please wait</p>
+    </div>
+
+    <audio id="audio"></audio>
+
+    <div class="progress-container" id="progress-container">
+      <div class="progress" id="progress"></div>
+    </div>
+    <div class="time-info">
+      <span id="current-time">0:00</span>
+      <span id="total-duration">0:00</span>
+    </div>
+
+    <div class="controls">
+      <button id="prev">⏮️</button>
+      <button id="play">▶️</button>
+      <button id="next">⏭️</button>
+    </div>
+
+    <ul id="playlist" class="playlist"></ul>
+  </div>
+
+  <script src="music player script.js"></script>
+</body>
+</html>
